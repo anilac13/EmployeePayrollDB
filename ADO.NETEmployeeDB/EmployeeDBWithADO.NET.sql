@@ -8,3 +8,5 @@ create table Employees
 	EmailId varchar(100),
 	Salary decimal(10,2)
 )
+
+select * from Employees;
