@@ -9,9 +9,9 @@ namespace ADO.NETEmployeeDB
             string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Database = EmployeeDB; Integrated Security = True";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-           /* string query = "insert into Employees values('John Doe', 'John@gmail.com', 1950)";
+            string query = "insert into Employees values('John Doe', 'John@gmail.com', 1950)";
             SqlCommand insertCommand = new SqlCommand(query, connection);
-            insertCommand.ExecuteNonQuery();*/
+            insertCommand.ExecuteNonQuery();
             connection.Close();
         }
     }
