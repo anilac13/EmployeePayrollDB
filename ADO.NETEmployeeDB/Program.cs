@@ -34,10 +34,10 @@ namespace ADO.NETEmployeeDB
                         Console.WriteLine("Enter Employee name to update salary");
                         string employeeName = Console.ReadLine();
                         Console.WriteLine("Enter salary to update");
-                        double alteredSalary = Convert.ToDouble(Console.ReadLine());
+                        double updatedSalary = Convert.ToDouble(Console.ReadLine());
 
                         connection.Open();
-                        string updateQuery = $"update employees set Salary = {alteredSalary} where EmployeeName = '{employeeName}'";
+                        string updateQuery = $"update employees set Salary = {updatedSalary} where EmployeeName = '{employeeName}'";
                         SqlCommand updateCommand = new SqlCommand(updateQuery, connection);
                         updateCommand.ExecuteNonQuery();
                         connection.Close();
