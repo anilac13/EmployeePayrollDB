@@ -12,7 +12,7 @@ namespace ADO.NETEmployeeDB
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Insert(Create) database \n2.Update records \n3.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Insert(Create) to database \n2.Update records \n3.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
